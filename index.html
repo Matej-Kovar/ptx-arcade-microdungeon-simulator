@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Microsoft MakeCode Arcade Simulator</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.makecode.com/blob/44ede4de9148cb4fdb5af0abd7673dba2458cbb9/sim.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.makecode.com/blob/829ec32a4649358f92bec09c6b049eba4c4121a3/icons.css">
+    <link rel="stylesheet" type="text/css" href="./sim.css">
+    <link rel="stylesheet" type="text/css" href="./icons.css">
     <link rel="stylesheet" href="./override.css">
     <style>
         body {
@@ -15,11 +15,8 @@
 
         /* fix for iOS; see https://github.com/PierBover/ios-iframe-fix */
         #wrap {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+            height: 100%;
+            width: 100%;
             overflow: hidden;
             -webkit-overflow-scrolling: touch;
         }

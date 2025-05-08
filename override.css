@@ -1,7 +1,21 @@
+:root {
+    color-scheme: light dark;
+    --background: light-dark(#E5CDC4, #412D4D);
+    --primary: light-dark(#FFEFE9, #5C406C);
+    --secondary: light-dark(#5C406C, #E5CDC4);
+    --text: light-dark(#251D2A, #FFEFE9);
+    --dark: light-dark(#412D4D, #251D2A);
+    --light: light-dark(#A4839F, #A4839F);
+  }
+
 #wrap {
-    --sim-background-color: #5C406C !important;
-    --sim-button-stroke: #412D4D !important;
-    --sim-text-color: #FFEFE9 !important;
-    --sim-button-fill: #251D2A !important;
-    --sim-dpad-fill: #A4839F !important;
+    --sim-background-color: var(--primary) !important;
+    --sim-button-stroke: var(--background) !important;
+    --sim-text-color: var(--text) !important;
+    --sim-button-fill: var(--dark) !important;
+    --sim-dpad-fill: var(--light) !important;
+}
+
+body{
+    background-color: var(--background);
 }
